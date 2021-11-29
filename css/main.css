@@ -1,0 +1,132 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #0d1a2d;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+    padding: 20px;
+    background-color: #15273f;
+    width: 330px;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0px 20px 12px 18px #0c1729;
+
+}
+.container .content .img {
+  position: relative;
+}
+.container .content img {
+max-width: 100%;
+transition: all 0.3s ease;
+border-radius: 10px;
+}
+.view {
+      height: 290px;
+    width: 290px;
+    background-color: #00fffb65;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.container .content .view:hover  {
+    opacity: 1;
+}
+.container .content .text {
+padding: 20px 0;
+border-bottom: 1px solid #2f4159 ;
+}
+.container .content .text h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+
+}
+.container .content .text h2:hover {
+color: #36dfe4;
+    cursor: pointer;
+}
+.container .content .text p {
+    font-size: 18px;
+    color: #70849f;
+    margin-bottom: 20px;
+}
+.container .content .text .span {
+  display: flex;
+  justify-content: space-between;
+}
+.container .content .text .span .one {
+  position: relative;
+  color: #36dfe4;
+  padding-left:20px ;
+
+}
+.container .content .text .span .one::before {
+  position: absolute;
+  content: '';
+  background-image: url(../images/icon-ethereum.svg);
+  background-repeat:no-repeat ;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.container .content .text .two {
+  position: relative;
+  color: #839ecb;
+
+}
+.container .content .text .span .two::before {
+  position: absolute;
+  content: '';
+  background-image: url(../images/icon-clock.svg);
+  background-repeat:no-repeat ;
+  width: 100%;
+  top: 2px;
+  left: -22px;
+  height: 100%;
+}
+.container .content .footer {
+padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content .footer img {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+
+}
+.container .content .footer p {
+  color: #70849f;
+  padding-right: 60px;
+}
+.container .content .footer span {
+  color: white;
+  transition: all 0.3s ease;
+}
+.container .content .footer span:hover {
+color: #36dfe4;
+ cursor: pointer;
+}
